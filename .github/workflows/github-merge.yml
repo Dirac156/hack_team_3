@@ -6,7 +6,7 @@ on:
 
 jobs:
   codereview:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository and provide your AWS credentials
       - name: Checkout repository
