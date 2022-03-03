@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Develop a solution for how we might increase social connection amongst African Youth",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dirac156/hack_team_3.git"
+  },
+  "keywords": [
+    "hackathon",
+    "team-3",
+    "docker",
+    "nodejs",
+    "reactjs",
+    "python",
+    "aws",
+    "mongodb"
+  ],
+  "author": "Adio Roheem, Irene Busa and Dirac Murairi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dirac156/hack_team_3/issues"
+  },
+  "homepage": "https://github.com/Dirac156/hack_team_3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
