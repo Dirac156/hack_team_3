@@ -1,0 +1,342 @@
+:root {
+    --color-black: #161616;
+
+    --color-black-2: #141414;
+
+    --color-orange: #ED6B30;
+
+    --color-purple: #9F5397;
+    
+    --color-primary: #F9F9F9;
+    --color-secondary: #F6E0B3;
+  
+    --color-white: #FFFFFF;
+    --color-grey: rgb(218, 218, 218);
+  
+    --color-blue: #5F77F2;
+  
+    --color-tomato: tomato;
+    --color-tomato-light: rgb(255, 119, 95);
+  
+    --color-green-light: #E1FFD9;
+  
+    --color-pink-light: #FFDEDC;
+    --color-pink-light-2: #FFD8ED;
+    --color-pink-light-3: #F6B8B8;
+    --color-pink-dark: #fd9494;
+  
+    --color-blue-light: #DFF1FF;
+    --color-blue-light-2: #E1E9FC;
+  
+    --color-yellow-light: #FBF9C9;
+  
+    --default-header-padding: 3rem 16rem .5rem;
+    --header-padding-1399: 3rem 15rem .5rem;
+    --header-padding-1199: 3rem 10rem .5rem;
+    --header-padding-991: 3rem 7rem .5rem;
+    --header-padding-767: 2rem 5rem .5rem;
+    --header-padding-575: 2rem 4rem;
+    --header-padding-400: 2rem 3rem;
+  
+    --default-padding: 5rem 16rem;
+    --default-padding-1399: 5rem 15rem;
+    --default-padding-1199: 5rem 10rem;
+    --default-padding-991: 5rem 7rem;
+    --default-padding-767: 3rem 5rem;
+    --default-padding-575: 2rem 4rem;
+    --default-padding-400: 2rem 3rem;
+  
+    /*  fonts */
+    --dancing-script: 'Dancing script', sans-serif;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --oxygen: 'Oxygen', sans-serif;
+    --lemonada: 'Lemonada', cursive;
+  }
+  
+  
+  
+  html {
+      box-sizing:border-box;
+      font-size: 62.5%;
+  }
+  
+  body {
+      /* font-family: 'Noto Sans JP', sans-serif; */
+      font-family: 'Montserrat', sans-serif;
+      /* font-family: 'Open Sans', sans-serif; */
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      /* min-height: 100vh !important; */
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+      box-sizing: inherit;
+      letter-spacing: 1.5px;
+  }
+  
+  .width-100 {
+      width: 100% !important;
+  }
+  
+  .parent-relative {
+      position: relative;
+      overflow: hidden;
+      height: fit-content;
+  }
+  
+  .form-inner-link {
+      text-transform: capitalize;
+      font-size: 1.4rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 1px solid var(--color-black);
+  }
+  
+  .form-inner-link:hover {
+      color: var(--color-blue);
+      border-color: var(--color-blue);
+  }
+  
+  .text-capitalize {
+      text-transform: capitalize;
+  }
+  
+  .text-bold {
+      font-weight: bold;
+  }
+  
+  .text-bold-900 {
+      font-weight: 900;
+  }
+  
+  .text-bold-500 {
+      font-weight: 500;
+  }
+  
+  .flex-middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .flex-50 {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .flex-50 > div {
+      flex-basis: 50%;
+  }
+  
+  .flex-right {
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .primary-header {
+      font-weight: 700;
+      font-size: 7rem;
+      color: var(--color-three);
+  }
+  
+  .secondary-header {
+      font-weight: 600;
+      font-size: 3rem;
+      /* text-align: center; */
+      font-style: normal;
+      color: var(--color-white-bold);
+      margin-bottom: 5rem;
+  }
+  
+  .h3-header {
+      font-weight: 500;
+      font-size: 2rem;
+      font-style: normal;
+      color: var(--color-white-bold);
+      margin-bottom: 2.5rem;
+  }
+  .secondary-header.black {
+      color: var(--color-black);
+  }
+  
+  .text-paragraph {
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-family: 'Lato', sans-serif;
+  }
+  
+  .left-align {
+      text-align: left;
+  }
+  
+  .bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+  }
+  
+  .height-50 {
+      height: 50rem;
+  }
+  
+  .height-90 {
+      height: 90rem;
+  }
+  
+  .height-100vh {
+      height: 100vh !important;
+  }
+  
+  .mb-10 {
+      margin-bottom: 10rem !important;
+  }
+  
+  .mb-9 {
+      margin-bottom: 9rem !important;
+  }
+  
+  .mb-8 {
+      margin-bottom: 8rem !important;
+  }
+  
+  .mb-7 {
+      margin-bottom: 7rem !important;
+  }
+  
+  .mb-6 {
+      margin-bottom: 6rem !important;
+  }
+  
+  .mb-5 {
+      margin-bottom: 5rem !important;
+  }
+  
+  .mb-3 {
+      margin-bottom: 3rem !important;
+  }
+  
+  .mb-2 {
+      margin-bottom: 2rem !important;
+  }
+  
+  .mt-0 {
+      margin-top: 0 !important;
+  }
+  .mt-5 {
+      margin-top: 5rem !important;
+  }
+  
+  .pd-0v{
+      padding: 0 !important;
+  }
+  
+  .pdlr-5 {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+  }
+  /* Extra large screen 2 */
+  
+  @media all and (max-width: 1399px) {
+  
+  }
+  
+  /* /* Extra large screen  */
+  @media all and (max-width: 1199px) {
+  
+  }
+  
+  /* /* Tablet view  */
+  @media all and (max-width: 991px) {
+      .secondary-header {
+          font-size: 2.8rem;
+      }
+  
+      .text-paragraph {
+          font-size: 1.5rem;
+      }
+  }
+  
+  /* /* Tablet landscape view  */
+  @media all and (max-width: 767px) {
+      .secondary-header {
+          font-size: 2.6rem;
+          margin-bottom: 4rem;
+      }
+      .text-paragraph {
+          font-size: 1.4rem;
+      }
+  }
+  
+  /* /* Tablet mobile landscape view  */
+  @media all and (max-width: 575px) {
+      .secondary-header {
+          font-size: 2.5rem;
+          margin-bottom: 3.5rem;
+      }
+  
+      .text-paragraph {
+          font-size: 1.3rem;
+      }
+  }
+  
+  /* /* Tablet mobile view */
+  @media all and (max-width: 400px) {
+      .secondary-header {
+          font-size: 2.5rem;
+          margin-bottom: 2.5rem;
+      }
+      .text-paragraph {
+          font-size: 1.2rem;
+      }
+  }
+  
+  
+  /* Extra large screen 2
+  
+  @media all and (max-width: 1399px) {
+  
+  }
+  
+  /* Extra large screen
+  @media all and (max-width: 1199px) {
+  
+  }
+  
+  /* Tablet view
+  @media all and (max-width: 991px) {
+  
+  }
+  
+  /* Tablet landscape view
+  @media all and (max-width: 767px) {
+  
+  }
+  
+  /* Tablet mobile landscape view
+  @media all and (max-width: 575px) {
+  
+  }
+  
+  /* Tablet mobile view
+  @media all and (max-width: 400px) {
+  
+  } */
