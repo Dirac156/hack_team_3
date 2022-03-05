@@ -12,6 +12,10 @@
   
     --color-white: #FFFFFF;
     --color-grey: rgb(218, 218, 218);
+
+    --color-grey-text: #56555A;
+
+    --color-black-3: #222222;
   
     --color-blue: #5F77F2;
   
@@ -45,6 +49,8 @@
     --default-padding-767: 3rem 5rem;
     --default-padding-575: 2rem 4rem;
     --default-padding-400: 2rem 3rem;
+
+    --default-padding-content: 3rem 5rem;
   
     /*  fonts */
     --dancing-script: 'Dancing script', sans-serif;
@@ -73,6 +79,12 @@
   
   a {
       text-decoration: none;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+  }
+
+  a:hover {
+      border-color: var(--color-grey-text);
   }
   
   ul {
@@ -88,6 +100,7 @@
       font-family: inherit;
       box-sizing: inherit;
       letter-spacing: 1.5px;
+      color: #ffffff;
   }
   
   .width-100 {
@@ -241,9 +254,25 @@
   .mt-0 {
       margin-top: 0 !important;
   }
+
+  .mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
   .mt-5 {
       margin-top: 5rem !important;
   }
+
+  .ml-2 {
+    margin-left: 2rem !important;
+}
+
+.mr-2{
+    margin-right: 2rem !important;
+}
   
   .pd-0v{
       padding: 0 !important;
@@ -252,6 +281,11 @@
   .pdlr-5 {
       padding-left: 5rem !important;
       padding-right: 5rem !important;
+  }
+
+
+  .color-grey {
+      color: var(--color-grey-text) !important;
   }
   /* Extra large screen 2 */
   

@@ -1,0 +1,40 @@
+.input-box {
+    position: relative;
+}
+.input-field {
+    width: 100%;
+    border-radius: .5rem;
+    height: 4.5rem;
+    margin-bottom: .5rem;
+    background: var(--color-black-3);
+    border: 0px solid transparent;
+    outline: transparent;
+    font-size: 1.4rem;
+    padding: .5rem 7rem;
+    color: #808080;
+}
+
+
+.input-field:active, .input-field:focus {
+    outline: transparent;
+}
+
+.input-box .input-icon {
+    position: absolute;
+    top: 20%;
+    right: 4rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.input-box .input-icon-before {
+    position: absolute;
+    top: 25%;
+    left: 4rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.input-icon > i::before, .input-icon-before > i::before, .input-icon-before> i::after, .input-icon-before > i {
+    color: #808080 !important;
+}

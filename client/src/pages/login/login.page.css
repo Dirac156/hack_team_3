@@ -1,3 +1,42 @@
-div {
-    
+.login-page {
+    background: var(--color-black);
+    min-height: 100vh;
+    overflow: hidden;
+
+    padding: var(--default-header-padding);
+}
+
+.login-page .login-page-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page-items .login-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.login-page-items .login-text {
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-grey-text);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.forgot-password {
+    color: var(--color-grey-text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+}
+
+.forgot-password:hover {
+    border-bottom: 1px solid #222222;
 }

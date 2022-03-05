@@ -1,0 +1,10 @@
+.home-page {
+    background: var(--color-black);
+    min-height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    padding: var(--default-padding-content);
+}
