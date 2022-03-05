@@ -3,27 +3,28 @@ import "./styles.css";
 
 const LoadingPage = () => {
     return (
-        <>
+        <div className="loading">
+            
             <div className="about">
-            <a className="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+            <a className="bg_links social portfolio" href="/#" >
                 <span className="icon"></span>
             </a>
-            <a className="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+            <a className="bg_links social dribbble" href="/#">
                 <span className="icon"></span>
             </a>
-            <a className="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+            <a className="bg_links social linkedin" href="/#">
                 <span className="icon"></span>
             </a>
-            <a className="bg_links logo"></a>
+            <a className="bg_links logo" href="/#">.</a>
             </div>
 
-            <div className="content">
+            <div className="content-loading">
             <div className="loading">
             <p>loading</p>
                 <span></span>
             </div>
             </div>
-            </>
+            </div>
     )
 }
 
