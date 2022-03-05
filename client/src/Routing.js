@@ -1,15 +1,24 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
+import LoadingPage from "./pages/page-loading/page-loading.component.jsx";
 
+const Home = lazy(() => import("./pages/home/home.page.js"));
+const Rooms = lazy(() => import("./pages/rooms/room.component"));
+const Login = lazy(() => import("./pages/login/login.page"));
+const Communities = lazy(() => import("./pages/communities/communities.jsx"));
 
 const Routing = () => {
     return (
         <>
-          <Suspense fallback={<div>...loading</div>}>
+          <Suspense fallback={<LoadingPage />}>
             <BrowserRouter>
                 <Routes>
-              </Routes>
-              <Footer />
+                    <Route exact path="/home" element={<Home />} />
+                    <Route exact path="/" element={<Login />} />
+                    <Route exact path="/auth/register" element={<Login />} />
+                    <Route exact path="/rooms" element={<Rooms />} />
+                    <Route exact path="/communities" element={<Communities />} />
+                </Routes>
             </BrowserRouter>
           </Suspense>
         </>

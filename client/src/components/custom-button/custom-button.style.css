@@ -1,0 +1,70 @@
+.custom-button {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.custom-button:hover {
+   transform: translateY(-1rem);
+}
+
+.custom-button:active {
+    animation: buttonClickEffect .3s ease .05s;
+}
+
+.custom-button .inner-button {
+    
+
+}
+
+.custom-button.filled .inner-button {
+    background-image: linear-gradient(
+        to right bottom,
+        var(--color-orange),
+        var(--color-purple)
+    );   
+}
+
+.inner-button {
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.inner-button > * {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.inner-button > *:first-child {
+    margin-right: 1rem;
+}
+
+.custom-button.overlay {
+    /* max-width: 250px; */
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, var(--color-orange), purple);
+    padding: 2px;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+}
+
+.custom-button.overlay .inner-button {
+    background: var(--color-black);
+}
+
+
+@keyframes buttonClickEffect {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

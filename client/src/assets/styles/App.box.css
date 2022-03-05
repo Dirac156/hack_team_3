@@ -1,0 +1,11 @@
+.width-50 {
+    width: 40%;
+}
+
+.width-content {
+    width: fit-content;
+}
+
+.block-center {
+    margin: 0 auto;
+}

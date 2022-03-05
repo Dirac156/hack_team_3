@@ -1,0 +1,9 @@
+.logo-navbar.navbar.brand {
+    width: 5rem !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+}
